@@ -1,0 +1,27 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "Portfolio"
+  ],
+  "homepage": "https://github.com/cander465-ai/Personal-Portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/cander465-ai/Personal-Portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cander465-ai/Personal-Portfolio.git"
+  },
+  "license": "MIT",
+  "author": "Cole Anderson",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "hi",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
