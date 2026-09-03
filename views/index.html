@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cole Anderson: Home</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ── INTRO OVERLAY ── -->
+    <div id="intro-overlay">
+        <div id="intro-content">
+            <p id="intro-line1">Fade out, and then</p>
+            <h2 id="intro-line2">Be <span>Reborn</span></h2>
+            <p id="intro-hint">click anywhere</p>
+        </div>
+    </div>
+
+    <!-- ── PAGE (hidden until intro exits) ── -->
+    <div id="page-wrap" style="opacity:0; pointer-events:none;">
+        <header>
+            <h1>Cole Anderson</h1>
+            <nav>
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+            <nav id="reg">
+                <a href="./projects.html" id="projects">Projects</a>
+                <a href="./projects/Resume (1).pdf" id="resume">Resume</a>
+                <a href="./about.html" id="about">About</a>
+            </nav>
+        </header>
+        <main>
+            <section id="bird">
+                <img src="./images/Phoenix.png" alt="">
+            </section>
+
+            <section id="quote-section">
+                <div id="quoteWrap">
+                    <h2 id="noburn">
+                        "If you face a wall that you think is unclimbable."
+                    </h2>
+                </div>
+                <h2 id="burnt">
+                    "Burn a new way of thinking into your mind and scale the unscalable"
+                </h2>
+            </section>
+
+            <section id="compiler-section">
+                <div id="compiler-box">
+                    <div id="compiler-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span id="compiler-title">phoenix.js</span>
+                    </div>
+                    <div id="compiler-code">
+                        <pre id="code-lines"></pre>
+                    </div>
+                    <div id="compiler-output"></div>
+                    <button id="compile-btn">&#9654; Compile Code</button>
+                </div>
+                <div id="phoenix-rise">
+                    <img src="./images/6d22bd12111cab20939c4adca253d1a6-removebg-preview.png" alt="Phoenix rising">
+                    <p id="rise-text">Be Reborn.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+    <section id="logo">
+        <img src="./images/android-chrome-192x192.png" alt="">
+    </section>
+    <section id="links">
+        <ul>
+            <li>&copy; 2026 Cole Anderson</li>
+            <li id="contact-item">
+                <span id="contact-toggle">Contact</span>
+                <a id="contact-email" href="mailto:cander465@west-mec.org">cander465@west-mec.org</a>
+            </li>
+            <li>Mountain Time (MST)</li>
+            <li><a href="cander465@west-mec.org">Help</a></li>
+        </ul>
+    </section>
+</footer>
+
+    <!-- Full-page nav overlay -->
+    <div class="nav-overlay" id="navOverlay" role="navigation" aria-label="Main navigation">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./projects/Resume (1).pdf">Resume</a></li>
+        </ul>
+    </div>
+
+    <img id="cursor-image" src="./images/feather.png" alt="">
+    <script src="./js/script.js"></script>
+</body>
+</html>

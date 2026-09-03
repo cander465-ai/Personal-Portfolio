@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Cole Anderson</h1>
+        <nav>
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <nav id="reg">
+            <a href="./index.html" id="projects">Home</a>
+            <a href="./projects/Resume (1).pdf" id="resume">Resume</a>
+            <a href="./about.html" id="about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Featured project (desktop: large image + title + description) -->
+        <section id="featured-project">
+            <img id="featured-img" src="./images/Screenshot 2026-04-16 161455.png" alt="Featured project">
+            <p id="featured-title">ClockWork</p>
+            <p id="featured-desc">Click On a picture to see the description of a project</p>
+        </section>
+
+        <!-- Three project thumbnails -->
+        <section id="projectbox">
+            <div id="project1">
+                <img src="./images/Screenshot 2026-04-16 161455.png" alt="ClockWork"
+                     data-title="ClockWork"
+                     data-desc="A web-based clock application built with vanilla JS."
+                     data-href="https://github.com/TheOneGingerGuy/web-design">
+                <a href="https://github.com/TheOneGingerGuy/web-design">ClockWork</a>
+            </div>
+            <div id="project2">
+                <img src="./images/Screenshot 2026-04-16 165023.png" alt="Mini Game"
+                     data-title="Mini Game Project"
+                     data-desc="A fun browser mini-game built with JavaScript."
+                     data-href="https://github.com/TheOneGingerGuy/Mini-Game-Project">
+                <a href="https://github.com/TheOneGingerGuy/Mini-Game-Project">Mini Game</a>
+            </div>
+            <div id="project3">
+                <img src="./images/Screenshot 2026-04-16 182138.png" alt="Business Website"
+                     data-title="Group Business Website"
+                     data-desc="A collaborative group project for a business website."
+                     data-href="https://github.com/TheOneGingerGuy/Group-Business-Website">
+                <a href="https://github.com/TheOneGingerGuy/Group-Business-Website">Business Site</a>
+            </div>
+        </section>
+    </main>
+
+   <footer>
+    <section id="logo">
+        <img src="./images/android-chrome-192x192.png" alt="">
+    </section>
+    <section id="links">
+        <ul>
+            <li>&copy; 2026 Cole Anderson</li>
+            <li id="contact-item">
+                <span id="contact-toggle">Contact</span>
+                <a id="contact-email" href="mailto:youremail@gmail.com">youremail@gmail.com</a>
+            </li>
+            <li>Mountain Time (MST)</li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </section>
+</footer>
+
+    <!-- Full-page nav overlay -->
+    <div class="nav-overlay" id="navOverlay" role="navigation" aria-label="Main navigation">
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./projects/">Resume</a></li>
+        </ul>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
