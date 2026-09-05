@@ -1,20 +1,19 @@
 const express = require('express');
 const path = require('path');
-
+const os = require('os');
+ 
+const pageRoutes = require('./routes/pages');
+ 
 const app = express();
-const PORT = 5000;
-
+const PORT = process.env.PORT || 3000;
+ 
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'index.html'));
-});
-app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'about.html'));
-});
-app.get('/projects', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'porjects.html'));
-});
+ 
+// All page routes are defined in routes/pages.js and pulled in here
+app.use('/', pageRoutes);
+ 
 app.listen(PORT, () => {
-    console.log(`Server started listening on http://localhost:${PORT}`);
+    console.log(`Server running at http://localhost:${PORT}`);
+    console.log(`Platform: ${os.platform()}`);
 });
+ 
